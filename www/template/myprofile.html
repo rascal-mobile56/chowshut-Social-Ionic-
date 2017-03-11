@@ -1,0 +1,44 @@
+<ion-view view-title="ChowShout" >
+<ion-nav-buttons side="left">
+      <button class="button icon ion-android-arrow-back" ng-click="back()">
+      </button>
+</ion-nav-buttons>
+
+<ion-content>
+    <div class="item-image img-div">
+            <img  class= "profileImage " ng-src="{{profileImage}}">
+    </div>
+    
+      <div class="card" style="margin: 5px;">
+        <p class="item " >
+            <b>{{username}}</b></br>
+          bepbroker@gmail.com</br>
+          Member Since Sunday November 1st,2015
+        </p>
+        
+      </div>
+      <div class="share-button-div item">
+        <h2 > Social Connections</h2>
+       <ul class="list">
+        <li class="item profileViewLi">
+          <label class="item-icon-left">
+            <i class="icon ion-social-facebook profile-social-icon facebook">Facebook</i> 
+          </label>
+          <input type="checkbox" ng-model="checkboxModelForProfile.Facebook" ng-change = "optionChange('facebook')"/>
+        </li>
+        <li class="item profileViewLi">
+           <label class="item-icon-left">
+            <i class="icon ion-social-twitter profile-social-icon">Twitter</i>
+          </label>
+           <input  type="checkbox" ng-model="checkboxModelForProfile.Twitter" ng-change = "optionChange('twitter')"/>
+        </li>
+      </ul>
+
+      <button type="button"  class="post-all-button button" ng-click="logoutAll()" >
+          Logout All 
+      </button>
+
+     </div>
+ 
+  </ion-content>
+</ion-view>

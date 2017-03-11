@@ -1,0 +1,58 @@
+<ion-view  view-title="ChowShout">
+
+<!-- Button for Nav using Icons -->
+<ion-nav-buttons side="left">
+      <button class="button icon ion-android-arrow-back" ng-click="reOpenCamera()">
+      </button>
+</ion-nav-buttons>
+<ion-nav-buttons side="right">
+      <button class="button icon ion-gear-a" ng-click="openMenu($event)">
+      </button>
+</ion-nav-buttons>
+
+
+<ion-content padding ="true">
+    
+    <div>
+        <h4>Image Captured By Camera</h4>
+        <p>Click Next Arrow to confirm</p>
+        <div class="item item-image" style="height: 180px;">
+            <!-- Image Captured by Camera -->
+            <img  ng-src="{{lastPhoto}}"/>
+        </div>
+
+      <div class="item" style ="padding: 5px;">
+      <label class=" addcaptionBox item item-input">
+          <input type="text" name="caption" ng-model="formData.caption" placeholder="write a caption..."  required>
+      </label>
+      </div>
+     <div class="share-button-div item">
+      <ul class="list">
+        <li class="item item-checkbox social-facebook-checkbox">
+           <label class="checkbox item-icon-left facebook">
+             
+             <input type="checkbox" id="fbBox" ng-model="checkboxModel.Facebook"  ng-change = "OptionChange('facebook')">
+             <i class="icon ion-social-facebook custom-icon">Facebook</i>
+
+           </label>
+           
+        </li>
+        <li class="item item-checkbox social-twitter-checkbox">
+           <label class="checkbox item-icon-left twitter ">
+             
+             <input type="checkbox" id="twitterBox" ng-model="checkboxModel.Twitter" ng-change="OptionChange('twitter')"> 
+             <i class="icon ion-social-twitter custom-icon">Twitter</i>
+
+           </label>
+        </li>            
+      </ul>
+      
+       <button type="button"  class="post-all-button button" ng-click="postAll()" >
+          Post
+        </button>
+
+     </div>
+       
+    </div>
+  </ion-content>
+</ion-view>

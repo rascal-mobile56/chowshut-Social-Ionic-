@@ -1,0 +1,233 @@
+/* Empty. Add your own CSS if you like */
+
+.guidText{
+    text-align: center;
+	  margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logout.button.button-block {
+	width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+.login.button.button-block {
+	/*
+	background: #444444;
+    color: white;
+	*/
+}
+
+.twitter-login.button.button-block {
+	
+  display: inline-block;
+  color: #FFFFFF;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #4099FF;
+}
+
+.facebook-login.button.button-block {
+
+  background: #3b5998;
+    color: white;
+}
+.share-button-div {
+
+    margin-top: 20px;
+    padding: 5px;
+
+}
+
+.twitter-share {
+  
+  display: inline-block;
+  color: #FFFFFF;
+  width: 50%;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #4099FF;
+}
+
+.facebook-share {
+  width: 50%;
+}
+.post-all-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.checkbox.item-icon-left {
+    font-size: 25px;
+}
+.checkbox.facebook.item-icon-left .icon:before  {
+    font-size: 35px;
+    border: solid 1px white;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.checkbox.twitter.item-icon-left .icon:before  {
+    font-size: 35px;
+    color: #4099FF;
+    margin-right: 10px;
+}
+.social-facebook-checkbox {
+      padding-top: 30px;
+      background: #3b5998;
+      color: white;
+}
+.social-twitter-checkbox {
+      padding-top: 30px;
+      background: #f8f8f8;
+      margin-top: 2px;
+      /*border: #ccc solid 1px;
+      border-radius: 3px;*/
+      font: bold 11px/17px Helvetica, Arial, sans-serif;
+}
+.custom-icon.icon {
+      font-size: 20px;
+      margin-left: 40px;
+}
+.error {
+    width:200px;
+    height:40px;
+    height:auto;
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+    bottom:10px;
+    background-color: #383838;
+    color: #F0F0F0;
+    font-family: Calibri;
+    font-size: 20px;
+    padding:10px;
+    text-align:center;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+
+/*========================
+Css for Login View
+==========================*/
+
+.login-view{
+  background: url('../img/bday.jpeg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logoImgCls{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 180px;
+    height: 180px;
+    border: solid white 6px;
+    border-radius: 30px;
+}
+.apptitletxt {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: inherit;
+}
+.appdesctxt{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    font-family: inherit;
+    margin-right: 8%;
+    margin-left: 8%;
+    line-height: 1.3em;
+}
+.login-button-div{
+    margin-top: 60px;
+    padding: 5px;
+    background: transparent;
+    border: 0px;
+}
+
+.twitter-login {
+  display: inline-block;
+  color: #FFFFFF;
+  width: 49%;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #4099FF;
+  float: right;
+  display: block;
+}
+
+.facebook-login {
+  width: 49%;
+  background: #3b5998;
+  color: white;
+  float: left;
+  display: block;
+}
+.contentWrapperCls{
+          background: rgba(34, 36, 40, 0.9);
+}
+.login-custom-icon.icon {
+      font-size: 20px;
+      left: 0px;
+      position: relative;
+      display: block;
+}
+
+/****** Profile View ***********/
+.profileCheckBox, input[type="checkbox"]{
+
+/*margin-left: 40px;*/
+
+}
+.profile-social-icon.icon {
+      font-size: 15px;
+      width: 200px;
+}
+li.profileViewLi label {
+ float: left; 
+ width: 90%; 
+ text-align: right; 
+}
+li.profileViewLi input[type="checkbox"] { 
+  float: right; 
+  width: 10%; 
+  text-align: left;
+  font-size: 20px;
+  }
+.profileImage{
+  background-image: url("../img/default.png");
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+div.share-button-div h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.img-div{
+  width: 200px;
+  vertical-align: middle;
+  margin: auto;
+  margin-top: 5px;
+}
+.profile-social-icon.ion-social-facebook:before{
+    color: white;
+    background: #3b5998;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.profile-social-icon.ion-social-twitter:before{
+    color: white;
+    background: #4099FF;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 20px;
+}

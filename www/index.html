@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' *; media-src *; img-src *">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="lib/angular-toastr/dist/angular-toastr.css" />
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- ngCordova  ngCordovaoauth and sha for Social Login -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
+    <script src="lib/sha.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <!-- Controller of ChowShout -->
+    <script src="js/controllers/controller.login.js"></script>
+    <script src="js/controllers/controller.tab.js"></script>
+    <script src="js/controllers/controller.hometab.js"></script>
+    <script src="js/controllers/controller.cameratab.js"></script>
+    <script src="js/controllers/controller.myprofile.js"></script>
+
+    <!-- Factories of ChowShout -->
+    <script src="js/factories/factory.global.js"></script>
+
+    <!-- Utills of ChowShout -->
+    <script src="js/utills/constant.values.js"></script>
+    <script src="js/utills/global.functions.js"></script>
+
+    <!-- Serivce for Twitter  -->
+    <script src="js/services/service.twitter.js"></script>
+    <script src="lib/ng-twitter-api/dist/ng-twitter-api.js"></script>
+
+    <!-- Serivce for FaceBook Login -->
+    <script src="js/services/service.facebook.js"></script>
+
+    <!-- Serivce for Chowserve -->
+    <script src="js/services/service.chowserve.js"></script>
+
+    <script src="lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
+
+
+
+  </head>
+  <body ng-app="chowShout">
+    <!-- nav Bar for views -->
+    <ion-nav-bar class="bar bar-header bar-calm">
+     <!--  <ion-nav-back-button>
+      </ion-nav-back-button> -->
+    </ion-nav-bar>
+
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

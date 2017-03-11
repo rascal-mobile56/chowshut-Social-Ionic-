@@ -1,0 +1,22 @@
+<ion-view cache-view="false" view-title="ChowShout" >
+
+<ion-nav-buttons side="right">
+      <button class="button icon ion-gear-a" ng-click="openMenu($event)">
+      </button>
+</ion-nav-buttons>
+
+<ion-content padding ="true">
+
+    <div class="list card">
+        <div class="item item-avatar">
+            <img ng-src="{{userProfileImage}}">
+            <h2 style="line-height: 2.5">{{username}}</h2>
+        </div>
+    </div>
+    <div>
+      <p class="guidText">Please click on the Camera Button to take a Picture</p>
+      <button type="button" class="logout button button-block" ng-click="logout()" > Logout From All</button>
+    </div>
+
+  </ion-content>
+</ion-view>
